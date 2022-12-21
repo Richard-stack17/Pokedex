@@ -1,0 +1,35 @@
+
+*{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+h1,h2,h3,h4,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+button{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+input{
+    outline:none;
+}
