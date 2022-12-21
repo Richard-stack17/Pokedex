@@ -21,7 +21,18 @@ button{
     display: block;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
+button:hover{
+    background-color: #1d0538;
+}
+select{
+    cursor: pointer;
+}
+select:hover{
+    border: 1px solid red;
+}
+
 ul{
     padding-left: 0;
     list-style: none;

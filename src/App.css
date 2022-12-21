@@ -92,7 +92,7 @@
     width: 75%;
     justify-content: center;
     margin-bottom: 1rem;
-    background-color: rgba(230, 83, 85, 0.938);
+    background-color: #dc2a2a;
     color: beige;
     border-radius: 3px 2px 4px 2px;
     
@@ -107,13 +107,15 @@
     font-size: 1.1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(130, 0, 0);
-    padding: 0.4rem;
+    position: relative;
+    top:1rem;
+    max-height: 2rem;
     border-radius: 50px;
     border-style:double;
 }
 .pokedex__select{
     color:beige;
-    background-color: rgb(1, 15, 15);
+    background-color: rgb(90, 37, 63);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border:none;
     border-radius: 4px;
@@ -124,7 +126,10 @@
 .pokedex__option{
     background-color: rgb(2, 15, 44);
 }
-
+.pokedex__form{
+    display: flex;
+    gap:1rem;
+}
 
 /*ESTILOS PAGINACIÓN*/
 .pagination__list{
@@ -136,14 +141,20 @@
     justify-content: center;
 }
 .pagination__item{
+    cursor: pointer;
     width:1.5rem;
     text-align: center;
     color:white;
     padding: 1rem;
-    background-color: rgba(16, 4, 77, 0.8);
+    background-color: #dc2a2a;
+    border: 1px solid white;
+    border-radius: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px black;
     font-size: 1.2rem;
+}
+.pagination__item:hover{
+    background-color: rgba(16, 4, 77, 0.8);
 }
 
 
@@ -157,6 +168,7 @@
     
 }
 .pokecard{
+    cursor: pointer;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.9rem;
     max-width: 300px;
@@ -166,6 +178,7 @@
     text-align: center;
     border:3.2px solid black;
     border-radius: 10px;
+    
 }
 .pokecard__header{
     
@@ -180,7 +193,7 @@
     
 }
 .pokecard__name{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color:rgb(226, 225, 255);
     text-shadow: 2px 2px 2px black;
     text-transform: uppercase;
@@ -397,6 +410,9 @@
     .home__flex{
         display: flex;
         justify-content: center
+    }
+    .pokedex__button{
+        background-color: #0f3252;
     }
     .pokeinfo__flex div{
         display: grid;
