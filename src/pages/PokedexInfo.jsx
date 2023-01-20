@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import NoExist from "../components/NoExist";
 
 const PokedexInfo = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [pokemon, setPokemon] = useState();
   const [aux, setAux] = useState(0);
   useEffect(() => {
@@ -14,19 +15,24 @@ const PokedexInfo = () => {
       .then((res) => setPokemon(res.data))
       .catch((err) => console.log(err));
   }, [id]);
-
+  const backPokedex = () =>{
+    navigate('/pokedex')
+  }
   return (
     <div className="pokeinfo">
       <div>
+        <a className="btn__return" onClick={backPokedex}><i class="fa-solid fa-left-long"></i></a>
         <section className="pokeinfo__title">
+        
         <img
             className="pokeinfo__img pokeinfo__logo"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/404px-International_Pok%C3%A9mon_logo.svg.png"
             alt="logo"
           />
         </section>
+        
         {
-          
+        
         <div className="pokeinfo__total">
           <div className="pokeinfo__twofirst">
             <div className="pokeinfo__section pokeinfo__description">

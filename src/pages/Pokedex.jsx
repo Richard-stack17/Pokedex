@@ -64,12 +64,17 @@ const Pokedex = () => {
         setHelp(filter)
         setInputValue(e.target.value)
     }
+    const backHome = ()=> {
+        navigate('/')
+    }
     return (
     <div className='pokedex'>
-        
+        <div className='btn__container'>
+        <a className='btn__return' onClick={backHome} type='button'><i class="fa-solid fa-left-long"></i></a>
+        </div>
         <h2 className='pokedex__title'>¡Welcome <span className='name'>{trainer}</span>! , here you can find your favorite pokemon. </h2>
         <form className='pokedex__form' onSubmit={handleSubmit}>
-            <input placeholder='Only numbers(1-905)' className='pokedex__input' onChange={handleChange2} id='search'type='text' value={inputValue}/>
+            <input placeholder='Search your pokemon' className='pokedex__input' onChange={handleChange2} id='search'type='text' value={inputValue}/>
             <button className='pokedex__button'>Search</button>
         </form>
         <select className='pokedex__select' onChange={handleChange}>

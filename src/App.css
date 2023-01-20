@@ -82,6 +82,7 @@
     padding: 1rem;
 }
 .pokedex__title{
+    margin-top: 40px;
     font-size: 2.2rem;
     text-align: center;
     color:rgb(248, 248, 240);
@@ -120,7 +121,7 @@
 }
 .pokedex__select{
     color:beige;
-    background-color: rgb(90, 37, 63);
+    background-color: rgb(134, 21, 41);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border:none;
     border-radius: 4px;
@@ -482,4 +483,20 @@
     max-width: 350px;
 }
 
-
+/* btn return */
+.btn__return {
+    display: inline-block;
+    position: absolute;
+    margin:5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 25px;
+    color:rgb(23, 23, 22);
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgb(234, 42, 154);
+    background-color: #dc2a2a;
+    cursor: pointer;
+    left: 5px;
+    top:10px;
+}
